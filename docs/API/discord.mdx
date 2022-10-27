@@ -31,5 +31,5 @@ local response = http:RequestAsync({
 	}
 })
 
-local discordRoles = http:JSONDecode(response)
+local discordRoles = http:JSONDecode(response.Body)
 ```
